@@ -42,7 +42,7 @@ const App = () => {
                 <div>
 
 
-                    <h1>Todo list</h1>
+                    <h1>Todolist</h1>
 
 
                     <Form
