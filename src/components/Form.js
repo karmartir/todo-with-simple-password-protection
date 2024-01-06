@@ -12,7 +12,7 @@ const Form = ({input, setInput, todos, setTodos, editTodo, setEditTodo}) => {
     const onFormSubmit = (e) => {
         e.preventDefault()
         if (!editTodo) {
-            if (input !== '') {
+            if (input.trim()) {
                 setTodos([...todos, {id: crypto.randomUUID(), title: input, completed: false}])
                 setInput('')
             }
